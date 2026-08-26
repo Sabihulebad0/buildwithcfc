@@ -1,5 +1,5 @@
 /* ==========================================================================
-   California Flooring & Construction — site behaviour
+   Better Build SC — site behaviour
    Vanilla JS, no dependencies. Each module bails out quietly when the
    markup it needs is not on the current page.
    ========================================================================== */

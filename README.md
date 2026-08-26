@@ -1,6 +1,6 @@
-# California Flooring &amp; Construction — buildwithcfc.com
+# Better Build SC — betterbuildsc.com
 
-A rebuild of the existing buildwithcfc.com site in plain HTML, CSS and JavaScript.
+A rebuild of the existing betterbuildsc.com site in plain HTML, CSS and JavaScript.
 The page structure, navigation, copy and photography of the original Wix site are
 kept; the presentation, responsiveness and interactions are new.
 
@@ -62,7 +62,7 @@ tour's `<iframe>` in place of the showroom image inside `.tour-frame`.
   gallery photo has a 800×600 thumbnail (`*-thumb.jpg`) and a larger version used by
   the lightbox.
 - Phone numbers, email, address and licence numbers match the current site:
-  805.498.8200 / 805.498.4232, info@BuildWithCFC.com,
+  805.555.0100 / 805.555.0142, info@betterbuildsc.com,
   810 Lawrence Dr., Suite 104, Newbury Park, CA 91320, Licence # B655786, C 906339.
 - The footer year updates itself.
 
