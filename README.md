@@ -16,7 +16,6 @@ folder to any web host.
 | `gallery.html` | `/gallery` |
 | `projects.html` | `/projects` |
 | `infrared-home-inspections.html` | `/infared-home-inspections` |
-| `virtual-tour.html` | `/virtual-tour` |
 | `contact.html` | `/form__map` and `/map` |
 
 Two old URLs were tidied up: the misspelled `infared` slug is now `infrared`, and the
@@ -26,18 +25,18 @@ search rankings to survive, add 301 redirects from the old paths to the new ones
 ## Structure
 
 ```
-index.html … contact.html   the seven pages
+index.html … contact.html   the six pages
 css/style.css               one stylesheet, sectioned and commented
 js/main.js                  one script, one module per feature
 images/                     photography, logo, favicon
 ```
 
 Header and footer markup is repeated in each page (there is no templating layer). If
-you change the navigation or footer, change it in all seven files.
+you change the navigation or footer, change it in all six files.
 
-## Two things to wire up before launch
+## One thing to wire up before launch
 
-**1. The contact form** (`contact.html`) validates in the browser and shows a success
+**The contact form** (`contact.html`) validates in the browser and shows a success
 message, but it does not send anything — a static site has no back end. Point it at a
 form service or your own handler, e.g. with Formspree:
 
@@ -48,10 +47,6 @@ form service or your own handler, e.g. with Formspree:
 then remove the `e.preventDefault()` block in `initForm()` in `js/main.js`, or keep
 the JS validation and let it submit once valid. Netlify Forms, Basin and a small PHP
 mailer all work the same way.
-
-**2. The virtual tour** (`virtual-tour.html`) currently links out to the old Wix tour.
-Replace the "Launch Tour" link with your Matterport / Street View URL, or paste the
-tour's `<iframe>` in place of the showroom image inside `.tour-frame`.
 
 ## Content notes
 

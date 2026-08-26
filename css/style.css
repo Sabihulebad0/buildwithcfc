@@ -12,7 +12,7 @@
    8.  Home page blocks
    9.  Gallery
    10. Project list
-   11. Infrared / virtual tour
+   11. Infrared
    12. Contact & forms
    13. Footer & utilities
    14. Motion & responsive
@@ -1628,7 +1628,7 @@ strong { font-weight: 600; color: var(--ink); }
 
 .chips a:hover { background: var(--ink); border-color: var(--ink); color: #fff; }
 
-/* 11. Infrared / virtual tour ============================================= */
+/* 11. Infrared ============================================================ */
 
 .thermal-grid {
   display: grid;
@@ -1682,29 +1682,6 @@ strong { font-weight: 600; color: var(--ink); }
   color: var(--ink);
   line-height: 1.2;
 }
-
-.tour-frame {
-  position: relative;
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  background: var(--ink);
-}
-
-.tour-frame img { width: 100%; aspect-ratio: 16 / 8.4; object-fit: cover; opacity: .78; }
-
-.tour-overlay {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  padding: 30px;
-  background: linear-gradient(to top, rgba(10, 13, 16, .78), rgba(10, 13, 16, .25));
-}
-
-.tour-overlay h3 { color: #fff; font-size: clamp(1.5rem, 3vw, 2.3rem); }
-.tour-overlay p { color: rgba(255, 255, 255, .82); max-width: 46ch; margin-inline: auto; }
 
 /* 12. Contact & forms ===================================================== */
 
@@ -1964,30 +1941,6 @@ strong { font-weight: 600; color: var(--ink); }
   font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: .01em;
-}
-
-.footer-tour {
-  display: block;
-  position: relative;
-  border-radius: var(--radius);
-  overflow: hidden;
-  margin-top: 22px;
-}
-
-.footer-tour img { width: 100%; aspect-ratio: 16 / 6; object-fit: cover; opacity: .55; transition: opacity .35s var(--ease), transform .6s var(--ease); }
-.footer-tour:hover img { opacity: .8; transform: scale(1.05); }
-
-.footer-tour span {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  color: #fff;
-  font-family: var(--display);
-  font-size: 1.1rem;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .footer-bottom {
