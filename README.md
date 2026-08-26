@@ -63,7 +63,7 @@ tour's `<iframe>` in place of the showroom image inside `.tour-frame`.
   the lightbox.
 - Phone numbers, email, address and licence numbers match the current site:
   805.555.0100 / 805.555.0142, info@betterbuildsc.com,
-  810 Lawrence Dr., Suite 104, Newbury Park, CA 91320, Licence # B655786, C 906339.
+  South Carolina, Licence # B655786, C 906339.
 - The footer year updates itself.
 
 ## Features
