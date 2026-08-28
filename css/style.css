@@ -389,8 +389,6 @@ strong { font-weight: 600; color: var(--ink); }
   flex: none;
 }
 
-.brand img { width: 54px; height: auto; }
-
 .brand-text { line-height: 1.12; }
 
 .brand-name {
@@ -516,7 +514,8 @@ strong { font-weight: 600; color: var(--ink); }
   border-bottom: 1px solid rgba(255, 255, 255, .12);
 }
 
-.drawer-head img { width: 44px; }
+.drawer-brand .brand-name { color: #fff; font-size: 1.45rem; }
+.drawer-brand .brand-sub { color: var(--gold); }
 
 .drawer-close {
   width: 42px;
@@ -1062,6 +1061,15 @@ strong { font-weight: 600; color: var(--ink); }
 }
 
 .service-card:hover::before { transform: scaleY(1); }
+
+.service-card p a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(0, 0, 0, .25);
+}
+
+.service-card p a:hover { text-decoration-color: currentColor; }
 
 .service-icon {
   width: 52px;
@@ -1872,7 +1880,6 @@ strong { font-weight: 600; color: var(--ink); }
 }
 
 .footer-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
-.footer-brand img { width: 56px; }
 
 .footer-brand .brand-name { color: #fff; font-size: 1.4rem; }
 .footer-brand .brand-sub { color: var(--gold); }
@@ -2054,7 +2061,6 @@ strong { font-weight: 600; color: var(--ink); }
   .header-inner { gap: 12px; }
   .brand,
   .brand-text { min-width: 0; }
-  .brand img { width: 44px; }
   .brand-name { font-size: 1.55rem; }
   .brand-sub { font-size: .52rem; letter-spacing: .1em; white-space: normal; }
 
