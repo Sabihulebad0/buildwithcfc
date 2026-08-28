@@ -448,20 +448,6 @@ strong { font-weight: 600; color: var(--ink); }
 
 .header-cta { display: flex; align-items: center; gap: 14px; flex: none; }
 
-.header-phone {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  font-family: var(--display);
-  font-size: 1.32rem;
-  font-weight: 700;
-  color: var(--ink);
-  letter-spacing: .01em;
-}
-
-.header-phone svg { width: 17px; height: 17px; color: var(--gold); }
-.header-phone:hover { color: var(--green); }
-
 .nav-toggle {
   display: none;
   width: 46px;
@@ -1061,6 +1047,13 @@ strong { font-weight: 600; color: var(--ink); }
 }
 
 .service-card:hover::before { transform: scaleY(1); }
+
+.service-card:target {
+  border-color: transparent;
+  box-shadow: var(--shadow-md);
+}
+
+.service-card:target::before { transform: scaleY(1); }
 
 .service-card p a {
   text-decoration: underline;
@@ -2018,10 +2011,6 @@ strong { font-weight: 600; color: var(--ink); }
 
 .js [data-reveal].is-in { opacity: 1; transform: none; }
 
-@media (max-width: 1240px) {
-  .header-phone { display: none; }
-}
-
 @media (max-width: 1080px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .service-grid,
@@ -2030,7 +2019,6 @@ strong { font-weight: 600; color: var(--ink); }
   .gal-grid { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .detect-grid { grid-template-columns: repeat(2, 1fr); }
-  .header-phone { display: none; }
 }
 
 @media (max-width: 960px) {
