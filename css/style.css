@@ -1958,17 +1958,6 @@ strong { font-weight: 600; color: var(--ink); }
 .footer-bottom a { color: rgba(255, 255, 255, .62); }
 .footer-bottom a:hover { color: var(--gold-lt); }
 
-.licence-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  font-size: .74rem;
-}
-
-.licence-tag b { color: var(--gold); font-weight: 600; }
-
 /* Back to top */
 .to-top {
   position: fixed;
