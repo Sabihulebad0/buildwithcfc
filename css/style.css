@@ -1009,6 +1009,100 @@ strong { font-weight: 600; color: var(--ink); }
 .band p { color: rgba(255, 255, 255, .82); max-width: 56ch; margin: 0; }
 .band-text { flex: 1 1 440px; }
 
+/* Relocation notice ------------------------------------------------------- */
+
+.relocate {
+  background: var(--green);
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.relocate .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-block: 10px;
+  text-align: center;
+}
+
+.relocate svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  stroke: var(--gold-lt);
+}
+
+.relocate p {
+  margin: 0;
+  color: rgba(255, 255, 255, .92);
+  font-size: .86rem;
+  letter-spacing: .01em;
+}
+
+.relocate b { color: #fff; font-weight: 700; }
+
+.relocate a {
+  color: var(--gold-lt);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(242, 198, 92, .45);
+}
+
+.relocate a:hover { color: #fff; border-bottom-color: #fff; }
+
+/* Journey (California -> South Carolina) ---------------------------------- */
+
+.journey {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: clamp(16px, 3.5vw, 40px);
+  flex-wrap: wrap;
+  margin-top: 38px;
+}
+
+.journey-node {
+  flex: 1 1 260px;
+  max-width: 340px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.journey-node--from { border-top-color: var(--gold); }
+.journey-node--now { border-top-color: var(--green); }
+
+.journey-node .eyebrow { margin-bottom: 10px; }
+.journey-node h3 { margin: 0 0 10px; }
+.journey-node p { margin: 0; font-size: .94rem; }
+
+.journey-arrow {
+  flex: none;
+  align-self: center;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.journey-arrow svg { width: 22px; height: 22px; }
+
+@media (max-width: 760px) {
+  .relocate .container { padding-block: 9px; gap: 8px; }
+  .relocate p { font-size: .8rem; }
+  .journey-arrow { transform: rotate(90deg); }
+}
+
 /* 8. Home page blocks ===================================================== */
 
 .service-grid {
